@@ -1,1 +1,2 @@
-**/credential.json
+backend/src/auth/credential.json
+frontend/src/firebaseConfig.json
