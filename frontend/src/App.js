@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import BookList from "./BookList";
+import CatList from "./CatList";
 import CreateUser from "./CreateUser"
 import SuperLogin from "./SuperLogin"
 
@@ -13,8 +13,8 @@ export default function App() {
           <Route path={"/login"}>
             <SuperLogin />
           </Route>
-          <Route path={"/book-list"}>
-            <BookList />
+          <Route path={"/cat-list"}>
+            <CatList />
           </Route>
           <Route path={"/createUser"}>
             <CreateUser />

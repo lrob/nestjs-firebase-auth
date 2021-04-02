@@ -19,14 +19,13 @@ function NotLoggedIn(props){
   );
 }
 
-export default function BookList() {
-  //create state to store our book list
+export default function CatList() {
   const [status, setStatus] = useState([]);
   const [message, setMessage] = useState([]);
 
   useEffect(() => {
     async function loadCats() {
-      //fetch the book list
+      //fetch the cat list
       
       const response = await fetch("http://localhost:4000/cats?limit=10", {
         //use the authorization
@@ -40,7 +39,6 @@ export default function BookList() {
         const json = await response.json()
         setMessage(json.message)
       } else {
-        //set the book list on state
         const text = await response.text()
         setMessage(text)
       }

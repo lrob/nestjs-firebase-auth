@@ -40,7 +40,6 @@ class EmailRegister extends React.Component{
                 if (token) {
                   //5 - put the token at localStorage (We'll use this to make requests)
                   localStorage.setItem("@token", token);
-                  //6 - navigate user to the book list
                   this.setState({
                     email: "",
                     password: ""

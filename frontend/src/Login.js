@@ -17,8 +17,8 @@ export default function Login() {
         if (token) {
           //5 - put the token at localStorage (We'll use this to make requests)
           localStorage.setItem("@token", token);
-          //6 - navigate user to the book list
-          history.push("/book-list");
+          //6 - navigate user to the cat list
+          history.push("/cat-list");
         }
       },
       function (error) {
